@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FPHActivity"
+    android:background="@color/bg">
+
+    <ImageView
+        android:id="@+id/imgF_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <ImageView
+        android:id="@+id/backF_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/back"
+        />
+
+
+    <TextView
+        android:id="@+id/txtF_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgF_1"
+        android:text="Forget Password!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/imgF_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtF_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/gambar3" />
+
+    <TextView
+        android:id="@+id/txtF_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgF_2"
+        android:text="Enter your email and we'll send you a link to reset your password."
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/lyF_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/txtF_2"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/L_edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:hint="Enter you email"
+            android:paddingLeft="10dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnF_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyF_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:width="300dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText"
+        />
+</RelativeLayout>
